@@ -1,0 +1,43 @@
+/* Efecto Parallax */
+.parallax {
+    background-image: url('images/food-banner.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fondo degradado del encabezado */
+.bg-gradient {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+/* Sombras y bordes suaves */
+.card {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.form-select, .form-control {
+    border-radius: 10px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.8s ease-in-out;
+}
